@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/home_button"
+        android:title="Home"
+        android:iconTint="@color/white"
+
+        android:icon="@drawable/baseline_home_24"/>
+
+    <item android:id="@+id/about_button"
+        android:title="About Us"
+        android:iconTint="@color/white"
+        android:icon="@drawable/baseline_assignment_24"/>
+
+    <item android:id="@+id/donation_button"
+        android:title="Donate"
+        android:iconTint="@color/white"
+        android:icon="@drawable/baseline_workspace_premium_24"/>
+
+    <item android:id="@+id/volunteer_button"
+        android:title="Volunteer"
+        android:iconTint="@color/white"
+        android:icon="@drawable/baseline_volunteer_activism_24"/>
+
+    <item android:id="@+id/contact_button"
+        android:title="Contact Us"
+        android:iconTint="@color/white"
+        android:icon="@drawable/baseline_local_phone_24"/>
+
+</menu>

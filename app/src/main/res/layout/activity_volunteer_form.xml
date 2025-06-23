@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.VolunteerFormActivity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="@color/blue">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Volunteer Form"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomController"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/volunteer" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/lerato_logo" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="Fill in the details"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/input_background"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViw3"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/baseline_person_24" />
+
+                <EditText
+                    android:id="@+id/nameEditTextText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/invisible_background"
+                    android:ems="10"
+                    android:hint="Name"
+                    android:inputType="text"
+                    android:padding="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/input_background"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagdeViw3"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/baseline_email_24" />
+
+                <EditText
+                    android:id="@+id/emailEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/invisible_background"
+                    android:ems="10"
+                    android:hint="Email Address"
+                    android:inputType="textEmailAddress"
+                    android:padding="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_background"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViddw3"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/baseline_contact_page_24" />
+
+                    <EditText
+                        android:id="@+id/ageInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/invisible_background"
+                        android:ems="10"
+                        android:hint="Age"
+                        android:inputType="number"
+                        android:padding="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_background"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imagdeViddw3"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/baseline_manage_accounts_24" />
+
+                    <EditText
+                        android:id="@+id/genderEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/invisible_background"
+                        android:ems="10"
+                        android:hint="Gender"
+                        android:inputType="text"
+                        android:padding="12dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/input_background"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageVidw3"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/baseline_assistant_24" />
+
+                <EditText
+                    android:id="@+id/motivationEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/invisible_background"
+                    android:ems="10"
+                    android:hint="Motivateion"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textAlignment="textStart" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/input_background"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagDeVidw3"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/baseline_work_outline_24" />
+
+                <EditText
+                    android:id="@+id/availabilityEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/invisible_background"
+                    android:ems="10"
+                    android:hint="Are you avalable immdiately"
+                    android:inputType="text"
+                    android:padding="12dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/volunteerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppins"
+                android:text="Become a Volunteer"
+                android:textSize="20dp"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="#F44336"
+                android:fontFamily="@font/poppins"
+                android:text="Cancel"
+                android:textSize="20dp"
+                app:cornerRadius="10dp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

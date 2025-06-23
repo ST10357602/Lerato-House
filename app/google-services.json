@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "536507234834",
+    "project_id": "leratohouseproject-b1484",
+    "storage_bucket": "leratohouseproject-b1484.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:536507234834:android:d035631136ea0d4136b6cb",
+        "android_client_info": {
+          "package_name": "com.example.leratoproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYqasl-llJ63csEKaJM4e0ZYN7ZsmPNpQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

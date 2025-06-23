@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:backgroundTint="#2196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Lerato's House"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomController"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="vertical"
+                android:background="@drawable/front"
+                >
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center_horizontal"
+                    android:text="Lerato's House For"
+                    android:textColor="@color/white"
+                    android:textSize="38sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViedw5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center_horizontal"
+                    android:text="The homeless children"
+                    android:textColor="@color/white"
+                    android:textSize="26sp"
+                    android:textStyle="bold|italic" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/dove" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="@font/poppins"
+                android:text="Upcoming Events"
+                android:textSize="25sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="320dp"
+                        android:background="@drawable/event1" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="CBD Housing event"
+                        android:textAlignment="center"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/imageViedw11"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/calendar" />
+
+                            <TextView
+                                android:id="@+id/textVdiew14"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="1"
+                                android:text="Date: 14 July 2025"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/imageView11"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/locationpin" />
+
+                            <TextView
+                                android:id="@+id/textView14"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="1"
+                                android:text="Location: Church Squere"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Detials"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Join us for a heartwarming community event in Pretoria Central dedicated to supporting homeless children. This day will provide nourishing meals, clothing, educational materials, and fun activities to bring joy and hope to these young lives."
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imdageView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="320dp"
+                        android:background="@drawable/events2" />
+
+                    <TextView
+                        android:id="@+id/tedxtView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="BrookLyn Center Event"
+                        android:textAlignment="center"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/imagdeViedw11"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/calendar" />
+
+                            <TextView
+                                android:id="@+id/textVddiew14"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="1"
+                                android:text="Date: 25 July 2025"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/imagesView11"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/locationpin" />
+
+                            <TextView
+                                android:id="@+id/texdtView14"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="1"
+                                android:text="Location: Brookly Community center"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView15d"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Detials"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Join us in Brooklyn for a special charity event supporting vulnerable children. The day will feature fun activities, educational workshops, and essential care packages. Together, we aim to raise awareness and provide hope for these young lives. Your support can help create a brighter, safer future for every child."
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomController"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/blue"
+        android:backgroundTint="@color/blue"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:itemTextAppearanceActiveBoldEnabled="true"
+        app:itemIconSize="31dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/bottom_controls" />
+</androidx.constraintlayout.widget.ConstraintLayout>

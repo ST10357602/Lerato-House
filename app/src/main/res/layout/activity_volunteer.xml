@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.VolunteerActivity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Make a Donation"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomController"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:src="@drawable/lerato_logo" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium_italic"
+                        android:text="Volunteer Today"
+                        android:textAlignment="center"
+                        android:textColor="#2196F3"
+                        android:textSize="38sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewd8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium_italic"
+                        android:text="And Make a Difference"
+                        android:textAlignment="center"
+                        android:textColor="#2196F3"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewdd8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:text="Join us on our mission to change the lives of young children by becoming a volunteer. As a volunteer you will be hands on with projects done by Lerato's House."
+                        android:textAlignment="center"
+                        android:textColor="#4CAF50"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/volunteerButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="30dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Sign Up Now"
+                        android:textSize="20sp"
+                        app:cornerRadius="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/newVisaButton"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:src="@drawable/nursing_home" />
+
+                        <ImageView
+                            android:id="@+id/newPayPalButton"
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/protection" />
+
+                        <ImageView
+                            android:id="@+id/aboutButton"
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/cooking" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomController"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/blue"
+        android:backgroundTint="@color/blue"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:itemTextAppearanceActiveBoldEnabled="true"
+        app:itemIconSize="31dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/bottom_controls" />
+</androidx.constraintlayout.widget.ConstraintLayout>

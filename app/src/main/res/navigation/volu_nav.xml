@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/volu_nav"
+    app:startDestination="@id/volunteer_Fragment">
+
+    <fragment
+        android:id="@+id/volunteer_Fragment"
+        android:name="com.example.leratoproject.Fragments.Volunteer_Fragment"
+        android:label="fragment_volunteer_"
+        tools:layout="@layout/fragment_volunteer_" />
+</navigation>

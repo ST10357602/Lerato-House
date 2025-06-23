@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.VolunteerThanksFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_margin="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/thank_v" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium_italic"
+                    android:text="Welcome"
+                    android:textAlignment="center"
+                    android:textColor="#2196F3"
+                    android:textSize="38sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewd8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium_italic"
+                    android:text="To the Team ❤️"
+                    android:textAlignment="center"
+                    android:textColor="#2196F3"
+                    android:textSize="35sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewdd8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:text="Congradulations on making the choice to become a volunteer. We look forward to engaging with you and getting to know you better as we make a difference together."
+                    android:textAlignment="center"
+                    android:textColor="#4CAF50"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/backToHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Back to Home"
+                    android:textSize="20sp"
+                    app:cornerRadius="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/newVisaButton"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/nursing_home" />
+
+                    <ImageView
+                        android:id="@+id/newPayPalButton"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/protection" />
+
+                    <ImageView
+                        android:id="@+id/aboutButton"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/cooking" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</FrameLayout>

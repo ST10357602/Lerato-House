@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/donation_navigation"
+    app:startDestination="@id/donationsFragment">
+
+    <fragment
+        android:id="@+id/donationsFragment"
+        android:name="com.example.leratoproject.Fragments.DonationsFragment"
+        android:label="fragment_donations"
+        tools:layout="@layout/fragment_donations" >
+        <action
+            android:id="@+id/action_donationsFragment_to_eftDonations"
+            app:destination="@id/eftDonations" />
+    </fragment>
+    <fragment
+        android:id="@+id/eftDonations"
+        android:name="com.example.leratoproject.Fragments.EftDonations"
+        android:label="fragment_eft_donations"
+        tools:layout="@layout/fragment_eft_donations" >
+        <action
+            android:id="@+id/action_eftDonations_to_donationsFragment"
+            app:destination="@id/donationsFragment" />
+        <action
+            android:id="@+id/action_eftDonations_to_thankYouDonation"
+            app:destination="@id/thankYouDonation" />
+    </fragment>
+    <fragment
+        android:id="@+id/thankYouDonation"
+        android:name="com.example.leratoproject.Fragments.ThankYouDonation"
+        android:label="fragment_thank_you_donation"
+        tools:layout="@layout/fragment_thank_you_donation" >
+        <action
+            android:id="@+id/action_thankYouDonation_to_donationsFragment"
+            app:destination="@id/donationsFragment" />
+        <action
+            android:id="@+id/action_thankYouDonation_to_eftDonations"
+            app:destination="@id/eftDonations" />
+    </fragment>
+</navigation>
